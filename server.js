@@ -4,6 +4,7 @@ import routes from "./src/routes/postsRoutes.js";
 
 //criando o servidor
 const app = express();
+app.use(express.static("uploads"));
 routes(app);
 
 //iniciando o servidor
